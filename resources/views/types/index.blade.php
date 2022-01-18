@@ -31,6 +31,9 @@
                                             @method("delete")
                                             <button type="submit" class="btn btn-danger">delete</button>
                                         </form>
+                                        <div class="ms-3">
+                                            <a href="{{ route('types.show', $item->id) }}" class="btn btn-info">List</a>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>

@@ -24,3 +24,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('products', ProductController::class);
 Route::resource('types', TypeController::class);
+Route::get("/test", [App\Http\Controllers\TypeController::class, 'test'])->name('types.test');

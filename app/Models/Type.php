@@ -13,6 +13,6 @@ class Type extends Model
 
     function listProduct()
     {
-        return $this->hasMany(Prodcutlist::class, 'id', 'type_id');
+        return $this->hasMany(Prodcutlist::class, 'type_id', 'id');
     }
 }

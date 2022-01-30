@@ -84,6 +84,6 @@ class TypeController extends Controller
 
     public function test(Type $type)
     {
-        return "netipong";
+        dd($type);
     }
 }

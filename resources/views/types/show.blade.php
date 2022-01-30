@@ -9,11 +9,14 @@
                     <div class="card-body">
                         Name : {{ $type->type_name }}
                         <br>
-                        {{ $type->listProduct }}
+                        <hr>
                         @foreach ($type->listProduct as $item)
                             <div>
-                                {{ $item->name }}
+                                name : {{ $item->name }}
+                                price : {{ number_format($item->price) }}
+                                stock : {{ number_format($item->stock) }}
                             </div>
+                            <hr>
                         @endforeach
                     </div>
                 </div>
